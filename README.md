@@ -14,10 +14,9 @@ Modify an existing fighting game to allow:
 Each of these options work to extract more of a player's intent while playing,
 and to reflect it within gameplay
 
-## How will you store data?
+## Current struggles
 
-Likely just text files where each line index is a frame of inputs,
-logged from the game engine
-
-I believe I should then be able to redirect input from the text files -> stdin,
-as an independent variable to the dependent divergences of gameplay!
+- Might have be strictly compiled for Windows machine
+  - `/Assets/Script/InputManager.cs` throws errors when opening within Unity
+  - `/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll` might be the root of
+    this problem
